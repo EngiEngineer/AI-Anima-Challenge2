@@ -203,7 +203,7 @@ MonoBehaviour:
   m_StartPoint: {x: 0, y: 0, z: 0}
   m_EndPoint: {x: -1.5, y: -1, z: 0}
   m_Width: 2.8
-  m_CostModifier: -1
+  m_CostModifier: 0
   m_Bidirectional: 1
   m_AutoUpdatePosition: 1
   m_Area: 2
@@ -255,7 +255,7 @@ MonoBehaviour:
   m_StartPoint: {x: 0, y: 0, z: 0}
   m_EndPoint: {x: -1.5, y: -1, z: 0}
   m_Width: 5
-  m_CostModifier: -1
+  m_CostModifier: 0
   m_Bidirectional: 1
   m_AutoUpdatePosition: 1
   m_Area: 2
@@ -307,7 +307,7 @@ MonoBehaviour:
   m_StartPoint: {x: 0, y: 0, z: 0}
   m_EndPoint: {x: 1.5, y: -1, z: 0}
   m_Width: 5
-  m_CostModifier: -1
+  m_CostModifier: 0
   m_Bidirectional: 1
   m_AutoUpdatePosition: 1
   m_Area: 2
@@ -412,7 +412,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 176923143}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 10, y: 1, z: 10}
   m_ConstrainProportionsScale: 0
@@ -429,7 +429,7 @@ Transform:
   - {fileID: 1751551756}
   - {fileID: 989365311}
   - {fileID: 48196935}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1619752263}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &176923148
 MonoBehaviour:
@@ -531,7 +531,7 @@ MonoBehaviour:
   m_StartPoint: {x: 0, y: 0, z: 0}
   m_EndPoint: {x: 1.5, y: -1, z: 0}
   m_Width: 5
-  m_CostModifier: -1
+  m_CostModifier: 0
   m_Bidirectional: 1
   m_AutoUpdatePosition: 1
   m_Area: 2
@@ -808,9 +808,10 @@ GameObject:
   - component: {fileID: 705985199}
   - component: {fileID: 705985198}
   - component: {fileID: 705985197}
-  m_Layer: 0
+  - component: {fileID: 705985202}
+  m_Layer: 6
   m_Name: Mimic
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -922,9 +923,25 @@ Transform:
   m_LocalPosition: {x: 0, y: 1, z: 20}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1540731286}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &705985202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 705985196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9782706423ccfc4bacc80cae2e0f103, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _bulletSpawn: {fileID: 1540731286}
+  _bullet: {fileID: 5562429393317062295, guid: b42dc1e6b0dab2e449cbb2fb4706c94f, type: 3}
+  _player: {fileID: 546437831}
 --- !u!1 &723245539
 GameObject:
   m_ObjectHideFlags: 0
@@ -949,7 +966,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 723245539}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -957,7 +974,7 @@ Transform:
   - {fileID: 935909096}
   - {fileID: 667237128}
   - {fileID: 1348560036}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1619752263}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &935909095
 GameObject:
@@ -1112,7 +1129,7 @@ MonoBehaviour:
   m_StartPoint: {x: 0, y: 0, z: 0}
   m_EndPoint: {x: 0, y: -1, z: -1.5}
   m_Width: 3
-  m_CostModifier: -1
+  m_CostModifier: 0
   m_Bidirectional: 1
   m_AutoUpdatePosition: 1
   m_Area: 2
@@ -1164,7 +1181,7 @@ MonoBehaviour:
   m_StartPoint: {x: 0, y: 0, z: 0}
   m_EndPoint: {x: 1.5, y: -1, z: 0}
   m_Width: 2.8
-  m_CostModifier: -1
+  m_CostModifier: 0
   m_Bidirectional: 1
   m_AutoUpdatePosition: 1
   m_Area: 2
@@ -1216,7 +1233,7 @@ MonoBehaviour:
   m_StartPoint: {x: 0, y: 0, z: 0}
   m_EndPoint: {x: 0, y: -1, z: -1.5}
   m_Width: 3
-  m_CostModifier: -1
+  m_CostModifier: 0
   m_Bidirectional: 1
   m_AutoUpdatePosition: 1
   m_Area: 2
@@ -1268,7 +1285,7 @@ MonoBehaviour:
   m_StartPoint: {x: 0, y: 0, z: 0}
   m_EndPoint: {x: -1.5, y: -1, z: 0}
   m_Width: 5
-  m_CostModifier: -1
+  m_CostModifier: 0
   m_Bidirectional: 1
   m_AutoUpdatePosition: 1
   m_Area: 2
@@ -1320,7 +1337,7 @@ MonoBehaviour:
   m_StartPoint: {x: 0, y: 0, z: 0}
   m_EndPoint: {x: 0, y: -1, z: 1.5}
   m_Width: 3
-  m_CostModifier: -1
+  m_CostModifier: 0
   m_Bidirectional: 1
   m_AutoUpdatePosition: 1
   m_Area: 2
@@ -1372,7 +1389,7 @@ MonoBehaviour:
   m_StartPoint: {x: 0, y: 0, z: 0}
   m_EndPoint: {x: 0, y: -1, z: -1.5}
   m_Width: 3
-  m_CostModifier: -1
+  m_CostModifier: 0
   m_Bidirectional: 1
   m_AutoUpdatePosition: 1
   m_Area: 2
@@ -1481,6 +1498,70 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1348560035}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1540731285
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1540731286}
+  m_Layer: 6
+  m_Name: BulletSpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1540731286
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1540731285}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.5, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 705985201}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1619752262
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1619752263}
+  m_Layer: 0
+  m_Name: Environment
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1619752263
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1619752262}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 176923147}
+  - {fileID: 723245540}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1685702480
 GameObject:
   m_ObjectHideFlags: 0
@@ -1661,7 +1742,7 @@ Transform:
   m_GameObject: {fileID: 1712787493}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1715,7 +1796,7 @@ MonoBehaviour:
   m_StartPoint: {x: 0, y: 0, z: 0}
   m_EndPoint: {x: 0, y: -1, z: 1.5}
   m_Width: 3
-  m_CostModifier: -1
+  m_CostModifier: 0
   m_Bidirectional: 1
   m_AutoUpdatePosition: 1
   m_Area: 2
@@ -1767,7 +1848,7 @@ MonoBehaviour:
   m_StartPoint: {x: 0, y: 0, z: 0}
   m_EndPoint: {x: 0, y: -1, z: 1.5}
   m_Width: 3
-  m_CostModifier: -1
+  m_CostModifier: 0
   m_Bidirectional: 1
   m_AutoUpdatePosition: 1
   m_Area: 2
@@ -1776,7 +1857,6 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1685702482}
-  - {fileID: 705985201}
-  - {fileID: 176923147}
-  - {fileID: 723245540}
+  - {fileID: 1619752263}
   - {fileID: 546437831}
+  - {fileID: 705985201}
